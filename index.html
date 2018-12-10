@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+    <!-- Attach Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Attach own CSS -->
+    <link rel="stylesheet" href="./static/css/main.css">
+  </head>
+  <body>
+    <!-- Use jQuery to insert navbar component into header tag -->
+    <header id="nav"></header>
+
+   <!-- Show products then show shopping cart on the right side of products -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" id="products">
+          <!-- products get inserted here, the code below is for test purposes only -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-img-top">
+                  <img class="card-img" src="http://placehold.it/250x250" alt="Placeholder">
+                </div>
+                <div class="card-title">Title</div>
+                <div class="card-subtitle">$0.00</div>
+                <div class="card-text">
+                  <p>This is a description.</p>
+                </div>
+                <button class="btn btn-primary" onClick="">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- ends col 9 -->
+        <div class="col-md-3" id="cart">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr>
+                <th colspan="2">Total:</th>
+                <th colspan="2" id="cart_total">$0.00</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div> <!-- ends col 3 -->
+      </div> <!-- ends row -->
+    </div> <!-- ends container -->
+
+
+    <!-- Attach jQuery CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Attach Bootstrap 4 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Attach own JS -->
+    <script type="text/javascript" src="./static/js/app.js"></script>
+  </body>
+</html>
